@@ -232,6 +232,61 @@ body {
   /* Se aplica el estado inicial de la animacion al estado animacion del elemento hasta que suceda la animación */
 }
 
+.row {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
+.row:first-child {
+  margin-top: 6rem;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  background-color: orangered;
+  float: left;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.row .col-1-of-2 {
+  width: calc(((100% - 5rem) / 2));
+}
+
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 5rem) / 3);
+}
+
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 5rem) / 4);
+}
+
+.row .col-2-of-3 {
+  width: calc(2 * ((100% - 2 * 5rem) / 3) + 5rem);
+}
+
+.row .col-2-of-4 {
+  width: calc(2 * ((100% - 3 * 5rem) / 4) + 5rem);
+}
+
+.row .col-3-of-4 {
+  width: calc(3 * ((100% - 3 * 5rem) / 4) + 2 * 5rem);
+}
+
 .header {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
