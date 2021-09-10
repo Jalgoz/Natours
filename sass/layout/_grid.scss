@@ -16,11 +16,9 @@
     // class*="col-"] == Selecciona todas las clases que contengan "col-" 
     // class$="col-"] == Selecciona todas las clases que terminen con "col-" 
     [class^="col-"] {
-        background-color: orangered;
         float: left;
         padding: 1.5rem;
         font-size: 1.6rem;
-        color: $color-white;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;

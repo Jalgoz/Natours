@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Esta propiedad sirve para darle formas al contenedor */
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /* Esta propiedad sirve para darle formas al contenedor */
 
     &__logo-box {
         position: absolute;
