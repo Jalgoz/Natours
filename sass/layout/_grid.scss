@@ -2,9 +2,9 @@
     max-width: $grid-width;
     margin: 0 auto;
 
-    &:not(:last-child) {
+    /* &:not(:last-child) {
         margin-bottom: $gutter-vertical;
-    }
+    } */
     
     &:first-child {
         margin-top: $gutter-vertical;
