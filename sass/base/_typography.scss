@@ -44,7 +44,7 @@
 
     &:hover {
         transform: skewY(2deg) skewX(10deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($color: $color-black, $alpha: .2);
+        @include box-shadow-subtitles;
     }
 }
 

@@ -13,7 +13,7 @@
     
     &:hover {
         transform: translateY(-.2rem);
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        @include box-shadow-buttons-hover;
 
         &::after {
             transform: scaleX(1.5) scaleY(1.6);
@@ -23,7 +23,7 @@
     
     &:active {
         transform: translateY(0rem);
-        box-shadow: 0 .5rem .7rem rgba($color-black, 0.2);
+        @include box-shadow-buttons-active;
     }
     
     &--white {
@@ -32,6 +32,15 @@
 
         &::after {
             background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
         }
     }
     

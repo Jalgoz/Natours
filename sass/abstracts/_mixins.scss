@@ -5,3 +5,19 @@
         clear: both;
     }
 }
+
+@mixin box-shadow-boxes {
+    box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: .15);
+}
+
+@mixin box-shadow-subtitles {
+    text-shadow: .5rem 1rem 2rem rgba($color: $color-black, $alpha: .2);
+}
+
+@mixin box-shadow-buttons-hover {
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+}
+
+@mixin box-shadow-buttons-active {
+    box-shadow: 0 .5rem .7rem rgba($color-black, 0.2);
+}
