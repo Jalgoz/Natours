@@ -330,13 +330,13 @@ body {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   -moz-perspective: 1000px;
-  height: 51rem;
+  height: 55rem;
   position: relative;
 }
 
 .card__side {
   font-size: 2rem;
-  height: 51rem;
+  height: 55rem;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   position: absolute;
@@ -387,7 +387,7 @@ body {
 
 .card__picture {
   background-size: cover;
-  height: 23rem;
+  height: 27rem;
   background-blend-mode: soft-light;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -409,7 +409,7 @@ body {
 }
 
 .card__heading {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: #fff;
   text-align: right;
   text-transform: uppercase;
@@ -417,7 +417,7 @@ body {
   position: absolute;
   top: 12rem;
   right: 2rem;
-  width: 70%;
+  width: 65%;
 }
 
 .card__heading-span {
@@ -535,7 +535,7 @@ body {
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
-  padding: 2.5rem;
+  padding: 5rem;
   text-align: center;
   border-radius: 3px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -629,8 +629,12 @@ body {
 }
 
 .row {
-  max-width: 120rem;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 5rem;
   /* &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     } */
@@ -647,37 +651,41 @@ body {
 }
 
 .row [class^="col-"] {
-  float: left;
-  padding: 1.5rem;
+  padding: 2rem;
   font-size: 1.6rem;
-}
-
-.row [class^="col-"]:not(:last-child) {
-  margin-right: 4rem;
+  /* &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        } */
 }
 
 .row .col-1-of-2 {
-  width: calc(((100% - 4rem) / 2));
+  /* width: calc(((100% - 4rem) / 2)); */
+  width: 45%;
 }
 
 .row .col-1-of-3 {
-  width: calc((100% - 2 * 4rem) / 3);
+  /* width: calc((100% - 2 * 4rem) / 3); */
+  width: 29%;
 }
 
 .row .col-1-of-4 {
-  width: calc((100% - 3 * 4rem) / 4);
+  /* width: calc((100% - 3 * 4rem) / 4); */
+  width: 22%;
 }
 
 .row .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 4rem) / 3) + 4rem);
+  /* width: calc(2 * ((100% - 2 * 4rem) / 3) + 4rem); */
+  width: 58%;
 }
 
 .row .col-2-of-4 {
-  width: calc(2 * ((100% - 3 * 4rem) / 4) + 4rem);
+  /* width: calc(2 * ((100% - 3 * 4rem) / 4) + 4rem); */
+  width: 44%;
 }
 
 .row .col-3-of-4 {
-  width: calc(3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem);
+  /* width: calc(3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); */
+  width: 66%;
 }
 
 .header {
