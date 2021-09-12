@@ -2,12 +2,12 @@
     // Funcionalidad
     perspective: 1000px; // La perspectiva se le pone al elemento padre siempre
     -moz-perspective: 1000px;
-    height: 55rem;
+    height: 60rem;
     position: relative;
 
     &__side {
         font-size: 2rem;
-        height: 55rem;
+        height: 60rem;
         transition: all .5s ease;
         position: absolute;
         top: 0;
@@ -51,8 +51,9 @@
     // Front Side estilos
     &__picture {
         background-size: cover;
-        height: 27rem;
+        height: 30rem;
         background-blend-mode: soft-light;
+        background-position: bottom;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1 {
@@ -140,12 +141,13 @@
     }
 
     &__price--only {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
+        letter-spacing: 1rem;
     }
 
     &__price--value {
         font-size: 6rem;
-        font-weight: 100;
+        font-weight: 300;
     }
 }

@@ -20,3 +20,7 @@ body {
     padding: 3rem;
     box-sizing: border-box; /* Para que el padding y border no se sume a ancho y alto de las cajas */
 }
+
+main {
+    background-color: $color-gray-light-1;
+}

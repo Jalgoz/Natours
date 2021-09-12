@@ -1,7 +1,7 @@
 .section-about {
-    background-color: $color-gray-light-1;
     margin-top: -20vh;
     padding: 28rem 0;
+    padding-bottom: 35rem;
 }
 
 .section-features {
@@ -14,7 +14,7 @@
 
     background-size: cover;
     transform: skewY(-7deg);
-    margin-top: -12rem;
+    margin-top: -11rem;
 
     & > * {
         transform: skewY(7deg);
@@ -22,12 +22,10 @@
 }
 
 .section-tours {
-    background-color: $color-gray-light-1;
     padding: 28rem 0 15rem 0;
     margin-top: -12rem;
 }
 
 .section-stories {
     padding: 15rem 0;
-    background-color: $color-gray-light-1;
 }

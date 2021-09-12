@@ -125,6 +125,10 @@ body {
   /* Para que el padding y border no se sume a ancho y alto de las cajas */
 }
 
+main {
+  background-color: #f7f7f7;
+}
+
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -197,6 +201,10 @@ body {
 
 .u-center-text {
   text-align: center;
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 10rem;
 }
 
 .u-margin-bottom-big {
@@ -305,7 +313,7 @@ body {
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
-  padding: 4px;
+  padding: 8px;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -330,13 +338,13 @@ body {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   -moz-perspective: 1000px;
-  height: 55rem;
+  height: 60rem;
   position: relative;
 }
 
 .card__side {
   font-size: 2rem;
-  height: 55rem;
+  height: 60rem;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   position: absolute;
@@ -387,8 +395,9 @@ body {
 
 .card__picture {
   background-size: cover;
-  height: 27rem;
+  height: 30rem;
   background-blend-mode: soft-light;
+  background-position: bottom;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
@@ -478,13 +487,14 @@ body {
 }
 
 .card__price--only {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
+  letter-spacing: 1rem;
 }
 
 .card__price--value {
   font-size: 6rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .composition {
@@ -635,9 +645,10 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 0 5rem;
-  /* &:not(:last-child) {
-        margin-bottom: $gutter-vertical;
-    } */
+}
+
+.row:not(:last-child) {
+  margin-bottom: 6rem;
 }
 
 .row:first-child {
@@ -720,9 +731,9 @@ body {
 }
 
 .section-about {
-  background-color: #f7f7f7;
   margin-top: -20vh;
   padding: 28rem 0;
+  padding-bottom: 35rem;
 }
 
 .section-features {
@@ -732,7 +743,7 @@ body {
   background-size: cover;
   -webkit-transform: skewY(-7deg);
           transform: skewY(-7deg);
-  margin-top: -12rem;
+  margin-top: -11rem;
 }
 
 .section-features > * {
@@ -741,12 +752,10 @@ body {
 }
 
 .section-tours {
-  background-color: #f7f7f7;
   padding: 28rem 0 15rem 0;
   margin-top: -12rem;
 }
 
 .section-stories {
   padding: 15rem 0;
-  background-color: #f7f7f7;
 }
