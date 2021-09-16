@@ -2,11 +2,12 @@
     width: 80%;
     margin: 0 auto;
     @include box-shadow-boxes;
-    background-color: $color-white;
+    background-color: rgba($color: $color-white, $alpha: .5);
     border-radius: 3px;
     padding: 6rem;
     padding-left: 9rem;
     font-size: $default-font-size;
+    backface-visibility: hidden;
     transform: skewX(-12deg);
 
     &__shape {
@@ -24,11 +25,12 @@
         height: 100%;
         transform: translateX(-4rem) scale(1.4);
         transition: all .5s;
-        
+        backface-visibility: hidden;
     }
 
     &__text {
         transform: skewX(12deg);
+        backface-visibility: hidden;
     }
 
     &__caption {

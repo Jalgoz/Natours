@@ -54,6 +54,7 @@
         height: 30rem;
         background-blend-mode: soft-light;
         background-position: bottom;
+        backface-visibility: hidden;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1 {
