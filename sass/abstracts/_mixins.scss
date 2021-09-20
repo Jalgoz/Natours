@@ -21,3 +21,10 @@
 @mixin box-shadow-buttons-active {
     box-shadow: 0 .5rem .7rem rgba($color-black, 0.2);
 }
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
