@@ -52,3 +52,8 @@ body {
         padding: 0;
     }
 }
+
+::selection { // Cambiar el color cuando se selecciona un texto o parrafo de la página
+    background-color: $color-primary;
+    color: $color-white;
+}

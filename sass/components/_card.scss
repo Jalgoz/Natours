@@ -186,7 +186,8 @@
         font-weight: 300;
     }
 
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em), 
+           only screen and (hover: none) { // Si no se puede hacer hover se muestra esto
          // Funcionalidad
         height: auto;
         border-radius: 3px;
