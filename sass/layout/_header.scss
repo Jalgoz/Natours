@@ -1,10 +1,40 @@
 .header {
-    height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8) ), url(../img/hero.jpg);
+    height: 85vh;
+    background-image: linear-gradient(to right bottom, 
+                rgba($color-primary-light, 0.8), 
+                rgba($color-primary-dark, 0.8) ), 
+                url(../img/hero-small.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /* Esta propiedad sirve para darle formas al contenedor */
+
+    // Preguntamos si la propiedad clip-path es soportada por el navegador
+    @supports (clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)) or (clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)) {
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /* Esta propiedad sirve para darle formas al contenedor */
+        height: 95vh;
+    }
+
+    // Si la resolución es mayor a 192dpi (2x) y el ancho mínimo de la pantalla es mayor a 600px ó el ancho mínimo de la pantalla es mayor a 1920px se aplica este código
+    @media (min-resolution: 192dpi) and (min-width: 37.5em)
+    , (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) // Para safari
+    , (min-width: 120em) { 
+        background-image: linear-gradient(to right bottom, 
+                rgba($color-primary-light, 0.8), 
+                rgba($color-primary-dark, 0.8) ), 
+                url(../img/hero.jpg);
+    }
+
+    @include respond(tab-land) {
+        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); /* Esta propiedad sirve para darle formas al contenedor */ 
+    }
+
+    @include respond(tab-port) {
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); /* Esta propiedad sirve para darle formas al contenedor */ 
+    }
+
+    @include respond(phone) {
+        clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); /* Esta propiedad sirve para darle formas al contenedor */ 
+    }
 
     &__logo-box {
         position: absolute;

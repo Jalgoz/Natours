@@ -15,6 +15,11 @@
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 1.5rem;
+            font-size: 4.2rem;
+        }
     
         /*
         animation-delay: 3s;
@@ -28,6 +33,10 @@
         font-weight: 400;
         letter-spacing: 1.8rem;
         animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+        }
     }
 }
 
@@ -41,6 +50,15 @@
     color: transparent;
     transition: all .2s;
     letter-spacing: 2px;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+        padding: 0 3.5rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         transform: skewY(2deg) skewX(10deg) scale(1.1);

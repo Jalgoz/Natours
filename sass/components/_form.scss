@@ -9,12 +9,17 @@
         color: inherit;
         padding: 1.5rem 2rem;
         border-radius: 2px;
-        background-color: rgba($color: $color-white, $alpha: .5);
+        background-color: rgba($color: $color-white, $alpha: .7);
         border: none;    
         border-bottom: 4px solid transparent; // Para que cuando agregemos un border-bottom en el focus no le aumente px
         width: 90%;
         display: block;
         transition: all .2s;
+
+        @include respond(phone) {
+            width: 100%;
+            background-color: rgba($color: $color-white, $alpha: 1);
+        }
 
         &:focus {
             outline: none;
@@ -50,6 +55,11 @@
     &__radio-group {
         width: 48%;
         display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-input {

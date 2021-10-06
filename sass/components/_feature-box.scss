@@ -1,11 +1,23 @@
 .feature-box {
    background-color: rgba($color: $color-white, $alpha: .8);
-   font-size: 1.5rem;
+   
    padding: 3rem;
    text-align: center;
    border-radius: 3px;
    @include box-shadow-boxes;
    transition: all .3s;
+
+   @include respond(normal-desktop) {
+       padding: 1.5rem;
+   }
+
+   @include respond(tab-land) {
+       padding: 2rem 3rem 5rem 3rem;
+   }
+
+   @include respond(tab-port) {
+       font-size: 1.6rem;
+   }
 
     &__icon {
         font-size: 6rem;
@@ -14,6 +26,10 @@
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
         color: transparent;
+
+        @include respond(tab-port) {
+            padding: 1rem;
+        }
     }
 
     &:hover {
