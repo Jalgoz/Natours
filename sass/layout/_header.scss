@@ -7,6 +7,9 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     // Preguntamos si la propiedad clip-path es soportada por el navegador
     @supports (clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)) or (clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)) {
@@ -47,7 +50,7 @@
     }
 
     &__text-box {
-        @include absCenter;
+        position: absolute;
         text-align: center;
     }
 }

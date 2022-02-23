@@ -61,13 +61,10 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 75%;
+  font-size: 68.75%;
   /*     @include respond(phone) {
         font-size: 46.88%; // 1rem = 7.5px
     } */ }
-  @media only screen and (max-width: 112.5em) {
-    html {
-      font-size: 68.75%; } }
   @media only screen and (max-width: 100em) {
     html {
       font-size: 62.5%; } }
@@ -928,7 +925,10 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: center;
-  position: relative; }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   @supports (clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)) or (clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -957,9 +957,6 @@ body {
     height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center; }
 
 .footer {
